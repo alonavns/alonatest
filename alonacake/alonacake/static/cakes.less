@@ -1,22 +1,23 @@
+@border-bottom-color: #ededed;
 @hf-back: #5ac0de;
 @odd-back: #f7f7f7;
-@text-color: #555555;
-@text-blue: #5e8ac7;
-@border-bottom-color: #ededed;
 @show-less: #55bfdd;
 @show-less-2: #55c0dd27;
+@text-color: #555555;
+@text-blue: #5e8ac7;
 
 body {
   color: @text-color;
+  letter-spacing: 1.1px;
 }
 
 footer,
 header {
   background: @hf-back;
-  text-align: center;
+  color: white;
   height: 50px;
   line-height: 50px;
-  color: white;
+  text-align: center;
 }
 
 footer {
@@ -26,8 +27,8 @@ footer {
 
 a,
 i {
-  cursor: pointer;
   color: @text-blue;
+  cursor: pointer;
 
   &:hover {
     text-decoration: none;
@@ -40,6 +41,19 @@ section {
 
   &.first {
     padding-top: 40px;
+
+    > div {
+      > p {
+        margin-top: 20px;
+        letter-spacing: 1.2px;
+      }
+
+      > a {
+        display: block;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+    }
   }
 
   &:nth-child(2n + 1) {
@@ -53,13 +67,13 @@ section {
   }
 
   > div {
-    width: 80%;
     max-width: 768px;
     margin: 0 auto;
+    width: 80%;
 
     > div > p {
-      text-transform: uppercase;
       font-size: 11px;
+      text-transform: uppercase;
     }
 
     .title {
@@ -70,34 +84,34 @@ section {
         padding-bottom: 30px;
 
         &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 50px;
           border-bottom: 3px solid;
           border-color: @border-bottom-color;
+          bottom: 0;
+          content: '';
+          left: 0;
+          position: absolute;
+          width: 50px;
         }
       }
 
       h3 {
-        margin-top: 10px;
-        margin-bottom: 30px;
-        padding-bottom: 30px;
         border-bottom: 1px solid @border-bottom-color;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        padding-bottom: 30px;
         position: relative;
       }
 
       .show-less {
-        position: absolute;
-        padding: 6px 14px;
-        color: @show-less;
         border: 1px solid @show-less;
         border-radius: 13px;
+        color: @show-less;
+        cursor: pointer;
         font-size: 11px;
+        position: absolute;
+        padding: 6px 14px;
         right: 0;
         top: 0;
-        cursor: pointer;
 
         &:hover {
           background: @show-less-2;
@@ -130,17 +144,17 @@ section {
         }
 
         .expand {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
           background: @text-blue;
+          border-radius: 50%;
+          height: 20px;
+          width: 20px;
 
-          display: flex;
           align-items: center;
+          display: flex;
           justify-content: center;
 
-          position: absolute;
           left: -10px;
+          position: absolute;
           top: calc(50% - 10px);
 
           i {
@@ -155,9 +169,9 @@ section {
           top: 20px;
 
           i {
-            margin-left: 5px;
             color: @show-less;
             font-size: 16px;
+            margin-left: 5px;
           }
         }
       }
