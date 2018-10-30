@@ -134,6 +134,24 @@ section {
         padding: 10px 30px;
         position: relative;
 
+        .fa-folder-open {
+          display: none;
+        }
+
+        &.open {
+          .expand {
+            display: none;
+          }
+
+          .fa-folder-open {
+            display: block;
+          }
+
+          .fa-edit {
+            display: none;
+          }
+        }
+
         h4 {
           color: @text-blue;
           margin-bottom: 20px;
@@ -167,6 +185,7 @@ section {
           position: absolute;
           right: 20px;
           top: 20px;
+          display: flex;
 
           i {
             color: @show-less;
