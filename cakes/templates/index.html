@@ -7,7 +7,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    {% load compress static %}
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'cakes.css' %}">
+    <!-- {% load compress static %}
 
     {% if debug %}
     {# This is the client-side way to compile less and an ok choice for local dev. #}
@@ -17,7 +20,7 @@
     {% compress css %}
     <link href="{% static 'cakes.less' %}" media="all" rel="stylesheet" type="text/less" />
     {% endcompress %}
-    {% endif %}
+    {% endif %} -->
 
     <title>Alona Cakes</title>
 </head>

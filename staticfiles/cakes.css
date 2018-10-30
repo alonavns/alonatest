@@ -1,0 +1,182 @@
+body {
+  color: #555555;
+  letter-spacing: 1.1px;
+}
+
+footer,
+header {
+  background: #5ac0de;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+footer {
+  height: 300px;
+  line-height: 300px;
+}
+
+a,
+i {
+  color: #5e8ac7;
+  cursor: pointer;
+}
+
+a:hover,
+i:hover {
+  text-decoration: none;
+}
+
+section {
+  background: white;
+  padding: 50px 0 70px;
+}
+
+section.first {
+  padding-top: 40px;
+}
+
+section.first > div > p {
+  margin-top: 20px;
+  letter-spacing: 1.2px;
+}
+
+section.first > div > a {
+  display: block;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+section:nth-child(2n + 1) {
+  background: #f7f7f7;
+}
+
+section:nth-child(2n + 1) .lists .list {
+  background: white;
+}
+
+section > div {
+  max-width: 768px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+section > div > div > p {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+section > div .title {
+  position: relative;
+}
+
+section > div .title h1 {
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+section > div .title h1:after {
+  border-bottom: 3px solid;
+  border-color: #ededed;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+
+section > div .title h3 {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+section > div .title .show-less {
+  border: 1px solid #55bfdd;
+  border-radius: 13px;
+  color: #55bfdd;
+  cursor: pointer;
+  font-size: 11px;
+  position: absolute;
+  padding: 6px 14px;
+  right: 0;
+  top: 0;
+}
+
+section > div .title .show-less:hover {
+  background: #55c0dd 27;
+}
+
+section > div .title .show-less i {
+  color: #55bfdd;
+}
+
+section > div .lists > p {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+section > div .lists .list {
+  background: #f7f7f7;
+  padding: 10px 30px;
+  position: relative;
+}
+
+section > div .lists .list .fa-folder-open {
+  display: none;
+}
+
+section > div .lists .list.open .expand {
+  display: none;
+}
+
+section > div .lists .list.open .fa-folder-open {
+  display: block;
+}
+
+section > div .lists .list.open .fa-edit {
+  display: none;
+}
+
+section > div .lists .list h4 {
+  color: #5e8ac7;
+  margin-bottom: 20px;
+}
+
+section > div .lists .list p {
+  letter-spacing: 1.4px;
+}
+
+section > div .lists .list .expand {
+  background: #5e8ac7;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: -10px;
+  position: absolute;
+  top: calc(40%);
+}
+
+section > div .lists .list .expand i {
+  color: white;
+  font-size: 15px;
+}
+
+section > div .lists .list .actions {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+}
+
+section > div .lists .list .actions i {
+  color: #55bfdd;
+  font-size: 16px;
+  margin-left: 5px;
+}

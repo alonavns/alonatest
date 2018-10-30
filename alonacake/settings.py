@@ -137,5 +137,5 @@ STATICFILES_FINDERS = (
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
-COMPRESS_OFFLINE = True
-COMPRESS_ENABLED = True
+# COMPRESS_OFFLINE = True
+# COMPRESS_ENABLED = True
