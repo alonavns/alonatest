@@ -124,9 +124,9 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR
 
-COMPRESS_PRECOMPILERS = (
-   ('text/less', 'lessc {infile} {outfile}'),
-)
+# COMPRESS_PRECOMPILERS = (
+#    ('text/less', 'lessc {infile} {outfile}'),
+# )
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
