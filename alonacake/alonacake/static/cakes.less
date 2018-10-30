@@ -1,0 +1,166 @@
+@hf-back: #5ac0de;
+@odd-back: #f7f7f7;
+@text-color: #555555;
+@text-blue: #5e8ac7;
+@border-bottom-color: #ededed;
+@show-less: #55bfdd;
+@show-less-2: #55c0dd27;
+
+body {
+  color: @text-color;
+}
+
+footer,
+header {
+  background: @hf-back;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+}
+
+footer {
+  height: 300px;
+  line-height: 300px;
+}
+
+a,
+i {
+  cursor: pointer;
+  color: @text-blue;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+section {
+  background: white;
+  padding: 50px 0 70px;
+
+  &.first {
+    padding-top: 40px;
+  }
+
+  &:nth-child(2n + 1) {
+    background: @odd-back;
+
+    .lists {
+      .list {
+        background: white;
+      }
+    }
+  }
+
+  > div {
+    width: 80%;
+    max-width: 768px;
+    margin: 0 auto;
+
+    > div > p {
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    .title {
+      position: relative;
+
+      h1 {
+        margin-top: 40px;
+        padding-bottom: 30px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 50px;
+          border-bottom: 3px solid;
+          border-color: @border-bottom-color;
+        }
+      }
+
+      h3 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid @border-bottom-color;
+        position: relative;
+      }
+
+      .show-less {
+        position: absolute;
+        padding: 6px 14px;
+        color: @show-less;
+        border: 1px solid @show-less;
+        border-radius: 13px;
+        font-size: 11px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+
+        &:hover {
+          background: @show-less-2;
+        }
+
+        i {
+          color: @show-less;
+        }
+      }
+    }
+
+    .lists {
+      > p {
+        margin-bottom: 20px;
+        margin-top: 40px;
+      }
+
+      .list {
+        background: @odd-back;
+        padding: 10px 30px;
+        position: relative;
+
+        h4 {
+          color: @text-blue;
+          margin-bottom: 20px;
+        }
+
+        p {
+          letter-spacing: 1.4px;
+        }
+
+        .expand {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: @text-blue;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          position: absolute;
+          left: -10px;
+          top: calc(50% - 10px);
+
+          i {
+            color: white;
+            font-size: 15px;
+          }
+        }
+
+        .actions {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+
+          i {
+            margin-left: 5px;
+            color: @show-less;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
