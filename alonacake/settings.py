@@ -138,3 +138,4 @@ STATICFILES_FINDERS = (
 django_heroku.settings(locals())
 
 COMPRESS_OFFLINE = True
+COMPRESS_ENABLED = True
