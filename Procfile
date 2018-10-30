@@ -1,1 +1,1 @@
-web: gunicorn alonacakes.wsgi --log-file -
+web: gunicorn alonacake.wsgi --log-file -
